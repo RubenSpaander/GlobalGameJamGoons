@@ -73,3 +73,48 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+# Ignore object files, shared libraries, executables
+*.dll
+*.so
+*.exe
+*.o
+
+# Ignore the bin directory
+bin/
+
+# Ignore the build.properties file in this directory
+/build.properties
+
+# Ignore all text files in test directories
+test/**.txt
+
+
+# Ignore all basic VS files
+*/.vs/*
+*/Debug/*
+*/Release/*
+*/x64/*
+*.user
+
+*.tlog
+*.pdb
+*.idb
+*.log
+
+# Ignore game folder
+ProjectFiles/
+
+# Exclude necessairy files from the ignore list
+!ProjectFiles/*/*/ThirdParty
+!ProjectFiles/*/*/Plugins
+
+!ProjectFiles/*/*/*.sln
+!ProjectFiles/*/*/*.uproject
+!ProjectFiles/*/*/Config
+!ProjectFiles/*/*/Content
+!ProjectFiles/*/*/Source
+!ProjectFiles/*/*/Intermediate/ProjectFiles
+!ProjectFiles/*/*/Saved/Config
+
+
+ProjectFiles/*/Saved/Config/CrashReportClient
